@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex012</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p> 
+    <video src="midia/videoM4V.m4v" width="500" height="500" controls></video>  
+    <h2>Fazendo com que seja compatível com a vários navegadores que não aceitem tal tipo de arquivo (e com thumbnail)</h2> 
+    <video poster="imagem/pexels-efrem-efre-14613675.jpg" controls width="500" height="500" > <!--a tag poster coloca a thumb e a controls da o botãod e start no vídeo-->
+        <source src="midia/videoM4V.m4v" type="video/mp4"> <!--Caso não abra esse vai pro próximo-->
+        <source src="midia/videoWEBM.webm" type="video/webm">
+        <sources src="midia/videoMP4.mp4" type="video/mp4">
+    </video>
+    <p>Obs: Vídeos hospedados localmente, caso haja um grande um número de acessos, podem e vão consumir muito tráfego de dados, ficando assim mais caro a hospedagem desse site</p>
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lqQR1tW0Vmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Quando utiliza-se a hospedagem dessa forma, pelo Youtube, o vídeo não consome dados no seu servidor, mas sim no Youtube</p>
+</body>
+</html>

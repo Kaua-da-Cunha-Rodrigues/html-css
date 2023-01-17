@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: 'Work Sans', sans-serif; /*Tem duas fontes diferentes, pois caso não ache uma, vá para a outra. Isso é chamado de safe combination*/
+            
+            /*Medidas Absolutas
+                cm, mm, in (polegada), px, pt (ponto), pc (pica)
+            
+              Medidas Relativas
+                em (relativa ao tamanho natural da coisa), ex (relativa à altura-x), rem (relativo ao rut), vw (relativa a largura da sua tela), vh (relativa a altura da sua tela), % (porcentagem) 
+
+                para medida de fonte recomenda-se o px e o em
+                16 px geralmente = 1em
+            */   
+            font-size: 2em;
+            
+        }   
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+                /*light, normal, bold, bolder*/
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font (junta tudo isso em cima)
+                Ordem: style, weight, size e family
+            */
+            font: italic normal 3em Arial, Helvetica, sans-serif;
+            /*Nem todas as fontes possuem tantas variações assim*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalho com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum facere vitae quod dolorem error cumque ullam obcaecati aliquam incidunt accusantium inventore magnam quo, eveniet eaque pariatur. Nostrum iure necessitatibus eum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptates alias animi voluptatem, delectus possimus voluptatibus ipsa recusandae provident. Alias, quam. Temporibus eos voluptates at modi labore nam culpa beatae.</p> 
+    <h2>Subtítulo do Exercício</h2>  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae sed voluptatem voluptatibus ducimus dolor vitae officiis facilis exercitationem reiciendis illo cupiditate iste nam, ab, earum fugit, quo incidunt laudantium?</p> 
+</body>
+</html>

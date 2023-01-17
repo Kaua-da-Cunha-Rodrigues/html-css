@@ -1,0 +1,21 @@
+html{
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#total{
+    text-align: center;
+}
+.voltar img{
+    margin-top: 5px;
+}
+.curso_completo{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.curso_completo:hover{
+    text-decoration: underline;
+}

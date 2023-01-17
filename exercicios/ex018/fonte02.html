@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Monster'; /*Aqui você define o nome*/
+            src: url('./fonts/Melted Monster.ttf') format("truetype"); /*existe o otf também, há depender do navegador um funciona melhor que o outro*/
+            font-weight: normal; /*Dizer que funciona melhor no normal*/
+            font-style: normal;
+
+            /*
+              Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype  
+                - truetype-aat (Apple Advanced Tipography)
+                - svg
+            */
+        }
+        body{
+            font-family: serif;
+        }
+        h1{
+            font-family: 'Monster';
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nostrum neque officiis assumenda tempore magni, asperiores omnis ullam laudantium iure fugiat eos excepturi veniam optio, animi culpa, distinctio fuga? Ratione.</p>    
+</body>
+</html>

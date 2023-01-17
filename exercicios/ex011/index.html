@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex011</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+    <picture> <!--Funciona tipo o media query do CSS, só que aqui, dependendo do tamanho da tela do usuário, ele mostrará uma imagem diferente. OBS: Eles tem que estar em ordem crescente (neste caso) para conseguir funcionar corretamente, então primeiro vem o 750px e depois o 1050px-->
+       <source media="(max-width: 750px)" srcset="imagens/foto1.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto2.png" type="image/png">
+        <img src="imagens/foto3.png" alt="Imagem Flexível">
+    </picture>    
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos reproduzir áudio</p>
+    <audio src="midia/Dove Love - Quincas Moreira.mp3" controls autoplay></audio> <!--Compatível com MP3 WAV OGG -->
+    <h2>Outra Forma de fazer para os diferentes tipos de arquivo</h2>
+    <audio preload="metadata" autoplay controls> <!--Existem três tipos de preload, no auto ele só considera que o site  terminou de carregar quando o audio carregar, o metadata só carrega algumas informações do áudio, e none não carrega nada até o usuário clicar no áudio -->
+        <source src="midia/Dove Love - Quincas Moreira.mp3" type="audio/mpeg"> <!--Se ele não conseguir carregar esse, passa para o próximo e assim por diante-->
+        <source src="midia/Dove Love - Quincas Moreira.ogg" type="audio/ogg">
+        <source src="midia/Dove Love - Quincas Moreira.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/Dove Love - Quincas Moreira.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>

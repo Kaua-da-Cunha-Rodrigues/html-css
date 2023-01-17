@@ -1,0 +1,26 @@
+body{
+    background-color: #A3C28D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #4D5C43;
+}
+h2{
+    color: #C4E8A9;
+}
+h1#principal{
+    text-align: center;
+    background-color: #859E73;
+} /*Alteração feita exclusiva feita para o h1 de id = "principal"*/
+.basico{
+    color: #89e58e;
+}
+.intermediario{
+    color: #dfe589;
+}
+.avancado{
+    color: #e58989;
+}
+.destaque{
+    background-color: rgb(231, 231, 115);
+}

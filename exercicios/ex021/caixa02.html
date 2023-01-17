@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: gray;  
+            text-align: center;  
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
+        }
+        h1{
+            box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.308); /*Sombra interna*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 10px 40px 30px; /*Raio da borda (pode arredondar) Ordem: Topo-Esquerda, Topo-Direita, Baixo-direita, Baixo-Esquerda*/
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+        article > h2{
+            background-color: lightyellow;
+            font-style: italic;
+        }
+        div#bola{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px auto 10px auto;
+            
+        }
+        div#bola > p{   
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav> <!-- Seção de navegaçã para outras páginas-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal -->
+        <section id="assuntos"> <!--Seção do conteúdo principal-->
+            <article>
+                <h2>Esportes</h2> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio qui dolore, praesentium iure nesciunt perspiciatis esse commodi, minus aut amet rerum asperiores debitis sequi corporis, ex exercitationem alias aliquam itaque.</p>    
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, velit laboriosam error doloremque consequuntur assumenda sapiente ipsa! Sed esse neque suscipit. Perspiciatis dolores dicta rerum soluta magni corporis, perferendis omnis!</p>
+                <aside>
+                    <p>Artigo escrito por José</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé-->
+        <p>Desenvolvido pelo Kauã</p>
+    </footer>
+    <div id="bola">
+        
+    </div>   
+</body>
+</html>
