@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; /*100% de altura e largura*/
+            position: relative; /*Por padrão já é assim pois é um box*/
+            height: 500px;
+            padding: 10px;
+            background-color: tomato;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: blue;
+
+            /*Quando a posição é absoluta, podemos mexer em dois atributos que "movem" essa caixa azul dentro da caixa vermelha, basicamente*/
+
+            left: 50%;
+            top: 50%; /*Essa config de agora não colocará o conteudo centralizado dentro do container, pois a imagem tem como ponto de partida o topo da esquerda. Abaixo resolveremos isso*/
+            
+            /*Vamos lá... O primeiro valor é referente ao eixo horizontal e o segundo ao eixo vertical. Quando eu coloco valores positivos, o eixo H move para a direita e o eixo V para baixo e, quando coloco valores negativos, acontece ao contrário. Colocamos -50% neles para que assim finalmente o conteudo esteja no exato centro do container*/
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>    
+</body>
+</html>
