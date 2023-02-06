@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+body{
+    font-family: 'Merienda One', cursive;
+    line-height: 3.5em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+header h1{
+    font-variant: small-caps;
+    font-family: 'Passion One', cursive;
+    font-size: 4em;
+}
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    font-size: 2em;
+}
+section{
+    padding: 87px 0 120px 30px;
+}
+section.texto{
+
+}
+section.imagem{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+}
+section.imagem#imagem1{
+    background-image: url('https://cdn.pixabay.com/photo/2019/03/30/12/11/ladybug-4091033_960_720.jpg');
+    background-position: bottom center;
+}
+section.imagem#imagem2{
+    background-image: url('https://alumniyat.com/wp-content/uploads/2021/11/Why-do-we-read-the-novel-scaled.jpg');    
+}
+section.imagem p.textoImagem{
+    color: white;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.452);
+    
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;    
+    text-align: center;
+}
+
