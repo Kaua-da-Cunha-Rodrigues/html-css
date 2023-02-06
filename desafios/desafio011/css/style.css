@@ -3,7 +3,6 @@
 
 body{
     font-family: 'Merienda One', cursive;
-    line-height: 3.5em;
 }
 a{
     color: white;
@@ -21,19 +20,18 @@ header{
 header h1{
     font-variant: small-caps;
     font-family: 'Passion One', cursive;
-    font-size: 4em;
+    
 }
 header p{
     font-family: Arial, Helvetica, sans-serif;
 }
 main{
-    font-size: 2em;
+    background-color: rgb(219, 219, 207);
+    font-size: 3vw;
+    letter-spacing: 5px; /*Espaçamento entre caracteres*/
 }
 section{
     padding: 87px 0 120px 30px;
-}
-section.texto{
-
 }
 section.imagem{
     background-repeat: no-repeat;
@@ -56,6 +54,7 @@ section.imagem p.textoImagem{
     
 }
 footer{
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;    
