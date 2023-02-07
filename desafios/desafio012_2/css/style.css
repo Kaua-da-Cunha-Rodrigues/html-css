@@ -18,15 +18,12 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 50px;
 }
 header h1{
-    padding-top: 50px;
     font-family: var(--fonte2);
     font-variant: small-caps; /*Todas as letras maiúsculas, mas as iniciais tem tamanho maior*/
     font-size: 8vh; /*É um jeito meio gambiarra de fazer uma responsividade, então o mais recomendado ainda seria fazer um media query por exemplo*/
-}
-header p{
-    padding-bottom: 50px;
 }
 a{
     color: white;
@@ -42,19 +39,31 @@ section{
     font-size: 3.5vw;
     line-height: 2em;
 }
+section p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
 }
 section.imagem{   
     color: white;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /*Dá um efeito parallax na imagem (quando da scroll a imagem não mexe junto)*/
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.322);
 }
 section.imagem p{
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.171);
     display: inline-block;
     padding: 10px 10px 10px 2px;
+    text-shadow: 1px 1px 0px black;
+}
+section.imagem#img1{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section.imagem#img2{
+    background-image: url(../imagens/background002.jpg);
 }
 footer{
     padding: 10px;
