@@ -11,11 +11,17 @@
         }
         table{
             width: 300px;
+            height: 300px;
             border-collapse: collapse; /*O padrão é separete que separa as bordas da td*/
         }
         th, td{
             border: 1px solid black;
             padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -34,12 +40,12 @@
         <th>Linha C</th>
         <tr>
             <td>A1</td>
-            <td>B1</td>
+            <td class="numero">B1</td>
             <td>C1</td>
         </tr>
         <tr>
             <td>A2</td>
-            <td>B2</td>
+            <td class="numero">B2</td>
             <td>C2</td>
         </tr>
         <tr>
