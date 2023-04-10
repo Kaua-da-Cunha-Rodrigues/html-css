@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }     
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }   
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        tr.indices{
+            background-color: grey;
+            color: white;
+        }
+        col.cnome{
+            background-color: aqua;
+        }
+        col.cgrupo{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício</h1>
+    
+    <table>
+        <colgroup> <!--Serve para situações onde seja necessário selecionar a coluna inteira. Nesse caso tem 4 pois são 4 colunas existentes na tabela-->
+            <col class="cnome">
+            <col class="cgrupo" span="2"> <!--Faz o papel de 2 colunas-->
+            <col class="cprof">
+        </colgroup>
+        <tr class="indices">
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr class="conteudo">
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="conteudo">
+            <td>João Guilherme</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Padeiro</td>
+        </tr>
+        <tr class="conteudo">
+            <td>Zé Felipe</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Cantor</td>
+        </tr>
+        <tr class="conteudo">
+            <td>Virginia</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Blogueira</td>
+        </tr>
+        <tr class="conteudo">
+            <td>Evaristo</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="conteudo">
+            <td>Willian</td>
+            <td>M</td>
+            <td>48</td>
+            <td>Repórter</td>
+        </tr>
+        <tr class="conteudo">
+            <td>Jonas</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Jogador</td>
+        </tr>
+    </table>
+</body>
+</html>
