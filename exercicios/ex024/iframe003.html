@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        iframe{
+            display: block;
+            margin: auto;
+            width: 95%;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, inventore ut iste placeat ullam labore asperiores porro? Veritatis, iste, atque nulla neque enim nemo odio cum, quas vel corrupti ea.</p>
+    <ul> <!--Ao inves de abrir outra aba, ele carrega o link dentro do iframe devido ao atributo "name"-->
+        <li><a href="paginasExtras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginasExtras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginasExtras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aperiam, tempora iste earum provident quidem repellendus soluta laudantium vero voluptatum vitae omnis quasi optio veritatis odio totam ullam animi officiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eaque tempore optio nam doloremque? Accusantium dolore sequi labore recusandae necessitatibus eaque. Iusto aspernatur neque optio tempore ratione id, ea ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, excepturi. Repudiandae quibusdam corrupti, dolorem sint beatae optio dolorum blanditiis quam, sequi consequuntur porro fugit quidem, harum eaque quae architecto provident?</p> 
+    <iframe src="" name="frame"></iframe>   
+</body>
+</html>
