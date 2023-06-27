@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Form 1</title>
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome:</label>
-             <input type="text" name="nome" id="inome">
+             <input type="text" name="nome" id="inome" required>
         </p>
         <p>
             <label for="isobreNome">Sobrenome:</label> 
-            <input type="text" name="sobreNome" id="isobreNome">
+            <input type="text" name="sobreNome" id="isobreNome" required>
         </p> 
         <!--ID mais utilizado em js e name para php, etc. o "i" no id é pra meios didáticos-->
         <!--o Label faz a ligação do input com a descrição-->

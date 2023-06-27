@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <h1>Teste de Form</h1>
+    <form action="" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="isu" required size="15" placeholder="Insira seu nome">
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="12" placeholder="Insira sua senha" autocomplete="current-password" required><!--current-password é para senhas já utilizadas, caso o usuário salve o login, por exemplo. O new é para novas-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>   
+</body>
+</html>
