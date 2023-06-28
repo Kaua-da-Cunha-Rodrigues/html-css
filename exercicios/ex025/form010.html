@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 8</title>
+</head>
+<body>
+    <form action="" method="get">
+        <p>
+            <label for="iano">Ano de Nascimento</label>
+            <input type="number" name="ano" id="iano" max="2023" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Idade</label>
+            <output name="idade" id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>  
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear();
+            idade.innerHTML = Number(atual) - Number(iano.value)    
+        }
+    </script>
+</body>
+</html>
