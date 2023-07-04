@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px){
+    span#burguer{
+        display: none;
+    }   
+    menu{
+        display: block;
+        background-color: rgba(128, 128, 128, 0.781);
+        border-top: 2px solid gray;
+    }
+    menu a{
+        border: none;
+        background-color: transparent;
+    }
+    menu ul{
+        display: flex;
+    }
+}

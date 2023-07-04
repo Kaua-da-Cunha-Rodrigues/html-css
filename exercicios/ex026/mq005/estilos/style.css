@@ -41,7 +41,7 @@ menu a:hover{
     background-color: gray;
 }
 main{
-    width: 90vw;
+    max-width: 980px;
     background-color: white;
     margin: auto;
     padding: 10px;
